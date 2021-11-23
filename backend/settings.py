@@ -128,17 +128,6 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'do-an-cnpm',
-#         'USER': 'postgres',
-#         'PASSWORD': 'tuevip123',
-#         'HOST': 'localhost',
-#         'PORT': '5432'
-#     }
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -180,15 +169,17 @@ STATIC_URL = '/static/'
 MEDIA_URL = "/images/"
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-    BASE_DIR / 'front-end/build/static'
+    # BASE_DIR / 'static',
+    # BASE_DIR / 'front-end/build/static',
+    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "front-end/build/static"),
 ]
 
 
 MEDIA_ROOT = BASE_DIR / "static/images"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
