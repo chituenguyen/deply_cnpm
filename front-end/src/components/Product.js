@@ -11,7 +11,7 @@ function Product({ product }) {
       <Link to={`product/${product._id}`} style={{ textDecoration: "none" }}>
         <div class="box" style={{ cursor: "pointer" }}>
           <a href="#" class="fas fa-eye"></a>
-          <Card.Img src={product.image}></Card.Img>
+          <Card.Img src={`static${product.image}`}></Card.Img>
           <h3 style={{ height: "50px" }}>{product.name}</h3>
           <Rating value={product.rating} color={"var(--green)"}></Rating>
           <span>${product.price}</span>
