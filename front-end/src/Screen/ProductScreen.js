@@ -34,7 +34,7 @@ function ProductScreen({ match, history }) {
       <Row>
         <Col md={4} style={{ textAlign: "center" }}>
           <Image
-            src={product.image}
+            src={`static${product.image}`}
             alt={product.name}
             style={{ width: "70%" }}
             className="imageProduct"

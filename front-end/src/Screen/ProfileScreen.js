@@ -139,7 +139,7 @@ function ProfileScreen({ history }) {
                   <td>{order.total_Price} $</td>
                   <th>
                     {order.is_Paid ? (
-                      order.paidAt
+                      order.paid_At
                     ) : (
                       <i className="fas fa-times" style={{ color: "red" }}></i>
                     )}

@@ -115,7 +115,11 @@ function OrderScreen({ history, match }) {
                       <ListGroupItem key={item.product}>
                         <Row>
                           <Col md={2}>
-                            <Image src={item.image} fluid rounded></Image>
+                            <Image
+                              src={`static${item.image}`}
+                              fluid
+                              rounded
+                            ></Image>
                           </Col>
                           <Col>{item.name}</Col>
                           <Col md={4}>
