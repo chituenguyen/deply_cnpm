@@ -45,7 +45,7 @@ function CartScreen({ match, history, location }) {
                 <Row>
                   <Col md={2}>
                     <Image
-                      src={`static${product.image}`}
+                      src={`static${product.product.image}`}
                       style={{
                         width: "60px",
                       }}

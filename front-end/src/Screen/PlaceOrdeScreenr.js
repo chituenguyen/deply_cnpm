@@ -85,7 +85,7 @@ function PlaceOrderScreen({ history, location }) {
                         <Row>
                           <Col md={2}>
                             <Image
-                              src={`static${item.image}`}
+                              src={`static${item.product.image}`}
                               fluid
                               rounded
                             ></Image>
